@@ -232,6 +232,17 @@
 
   .header {
     min-block-size: 1024px;
+    margin-inline-end: 14px;
+    margin-block-start: 10px;
+  }
+
+  .header__title {
+
+  }
+
+  .header__theme-menu-list {
+    gap: 17px;
+    margin-block-end: 10px;
   }
 
   .decorated-elements::after {
@@ -248,8 +259,7 @@
   }
 
   .content {
-    margin-inline-start: 30px;
-    margin-inline-end: 9px;
+    margin-inline-start: 20px;
     margin-block-start: 10px;
   }
 
@@ -350,7 +360,7 @@
   }
 
   .header__theme-menu {
-    display: flex;
+    display: grid;
     justify-self: center;
     align-self: start;
   }
@@ -365,12 +375,18 @@
     grid-template-columns: 315px 1fr;
   }
 
+  .articles__wrapper {
+    display: flex;
+  }
+
   .content__what {
-     
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
 
   .main__title {
-
+    grid-column: 1 / -1;
   }
 
   .footer__title {
