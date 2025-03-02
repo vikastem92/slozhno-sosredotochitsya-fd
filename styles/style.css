@@ -17,7 +17,6 @@
   align-items: center;
   block-size: 100vh;
   min-block-size: 668px;
-  position: relative;
   padding: 10px;
 }
 
@@ -294,8 +293,8 @@
     grid-column: 1;
   }
 
-  .content__article {
-    grid-column: 2;
+  .content__why .content__article {
+    grid-column: 2 / -1;
   }
 
   .content__what {
