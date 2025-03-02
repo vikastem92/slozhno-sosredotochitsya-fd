@@ -101,7 +101,6 @@
 
 .header__theme-menu-button:active {
   border: 1px solid var(--accent-color);
-  pointer-events: none;
 }
 
 
@@ -233,6 +232,7 @@
 
   .header__title {
     margin-inline-start: -20px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .header__theme-menu-list {
@@ -271,10 +271,6 @@
 
   .title-text {
     inline-size: 50%;
-  }
-
-  .header__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .content {
