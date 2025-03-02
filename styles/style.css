@@ -137,7 +137,8 @@
 }
 
 .content__article {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 10px;
 }
 
@@ -360,8 +361,8 @@
   }
 
   .footer {
-    margin-block-start: 60px;
     min-block-size: 1024px;
+    padding-block-start: 45px;
   }
 
   .footer__title {
@@ -415,6 +416,10 @@
 
   .content__how {
     grid-template-columns: 315px 1fr;
+  }
+
+  .footer {
+    min-block-size: 768px;
   }
 
   .footer__title {
