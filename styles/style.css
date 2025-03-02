@@ -103,7 +103,6 @@
   border: 1px solid var(--accent-color);
 }
 
-
 .header__title {
   justify-self: start;
   font-family: var(--main-font-family);
@@ -112,7 +111,6 @@
   text-shadow: 4px 4px 0 var(--accent-color);
   line-height: 95.7px;
 }
-
 
 .title-decor {
   font-family: var(--main-font-family);
@@ -247,13 +245,13 @@
 
   .decorated-elements::before {
     position: absolute;
-    top: 20px;
+    top: 40px;
     right: 20px;
   }
 
   .decorated-elements::after {
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
     left: 20px;
   }
 
