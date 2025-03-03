@@ -20,17 +20,6 @@
   padding: 10px;
 }
 
-.decorated-elements::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  inline-size: 25px;
-  block-size: 25px;
-  border-block-start: 1px solid var(--accent-color, #FF0070);
-  border-inline-end: 1px solid var(--accent-color, #FF0070);
-}
-
 .decorated-elements::after {
   content: "";
   position: absolute;
@@ -42,20 +31,33 @@
   border-inline-start: 1px solid var(--accent-color, #FF0070);
 }
 
+.decorated-elements::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  inline-size: 25px;
+  block-size: 25px;
+  border-block-start: 1px solid var(--accent-color, #FF0070);
+  border-inline-end: 1px solid var(--accent-color, #FF0070);
+}
+
+
 .rec-element {
   display: flex;
   position: absolute;
   gap: 10px;
-  right: 10px;
+  right: 20px;
   top: 10px;
-  margin-inline-end: 10px;
 }
 
 .rec-element::before {
-  content: "REC";
+  content: "rec";
   color: var(--accent-color, #FF0070);
+  font-family: var(--main-font-family);
   font-weight: 400px;
   line-height: 25px;
+  text-transform: uppercase;
 }
 
 .rec-element::after {
@@ -99,8 +101,8 @@
   outline: 1px solid var(--color-hover);
 }
 
-.header__theme-menu-button:active {
-  border: 1px solid var(--accent-color);
+.header__theme-menu-button_active {
+  border: 1px solid var(--color-active);
 }
 
 .header__title {
@@ -108,7 +110,7 @@
   font-family: var(--main-font-family);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   color: var(--focus-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--focus-header-shadow);
   line-height: 95.7px;
 }
 
@@ -148,7 +150,7 @@
 .main__title {
   font-family: var(--main-font-family);
   font-size: 18px;
-  color: var(--accent-color);
+  color: var(--main-title-color);
   font-weight: 700;
   line-height: 23.4px;
 }
@@ -214,7 +216,7 @@
   color: var(--focus-color);
   font-size: 116px;
   line-height: 95.7px;
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--focus-footer-shadow);
   align-self: center;
   margin-inline-start: 14px;
   margin-inline-end: 13px;
@@ -243,16 +245,16 @@
     padding: 2px 13px 4px;
   }
 
-  .decorated-elements::before {
-    position: absolute;
-    top: 40px;
-    right: 20px;
-  }
-
   .decorated-elements::after {
     position: absolute;
-    bottom: 0px;
+    bottom: 20px;
     left: 20px;
+  }
+
+  .decorated-elements::before {
+    position: absolute;
+    top: 20px;
+    right: 20px;
   }
 
   .rec-element::before {

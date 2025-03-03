@@ -15,7 +15,11 @@
   --article-title-text-color: #000028;
   --accent-color: #FF0070;
   --focus-color: #DB00FF;
+  --focus-header-shadow: #FF0070;
+  --focus-footer-shadow: #FF0070;
   --color-hover: #F1B2CE;
+  --color-active: #FF0070;
+  --main-title-color: #FF0070;
 }
 
 .theme-dark .page {
