@@ -42,7 +42,6 @@
   border-inline-end: 1px solid var(--accent-color, #FF0070);
 }
 
-
 .rec-element {
   display: flex;
   position: absolute;
