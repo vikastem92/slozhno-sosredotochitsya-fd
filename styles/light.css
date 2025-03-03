@@ -42,6 +42,10 @@
   display: none;
 }
 
+.theme-auto .rec-element {
+  display: none;
+}
+
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
 }
