@@ -10,31 +10,35 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --bg-image: url(../images/cover-image-light.png);
-  --main-font-family: IBM Plex Mono;
+  --bg-color: #fff1f7;
+  --main-font-family: IBM Plex Mono, monospace;
   --card-text-color: #353430;
   --article-title-text-color: #353430;
   --accent-color: #FF8DCB;
   --focus-color: #FFC2E6;
   --focus-header-shadow: #FF8DCB;
   --focus-footer-shadow: #FF0070;
-  --color-hover: #353430;
+  --color-hover: rgba(53, 52, 48, 0.4);
   --color-active: #353430;
   --main-title-color: #353430;
+  --color-decor-el: #353430;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --bg-image: url(../images/cover-image-light.png);
-    --main-font-family: IBM Plex Mono;
+    --bg-color: #fff1f7;
+    --main-font-family: IBM Plex Mono, monospace;
     --card-text-color: #353430;
     --article-title-text-color: #353430;
     --accent-color: #FF8DCB;
     --focus-color: #FFC2E6;
     --focus-header-shadow: #FF8DCB;
     --focus-footer-shadow: #FF0070;
-    --color-hover: #353430;
+    --color-hover: rgba(53, 52, 48, 0.4);
     --color-active: #353430;
     --main-title-color: #353430;
+    --color-decor-el: #353430;
   }
 }
 

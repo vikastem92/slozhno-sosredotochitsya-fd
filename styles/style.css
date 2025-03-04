@@ -6,7 +6,7 @@
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  background-color: #000028;
+  background-color: var(--bg-color);
 }
 
 .header {
@@ -27,8 +27,8 @@
   left: 10px;
   inline-size: 25px;
   block-size: 25px;
-  border-block-end: 1px solid var(--accent-color, #FF0070);
-  border-inline-start: 1px solid var(--accent-color, #FF0070);
+  border-block-end: 1px solid var(--color-decor-el, #FF0070);
+  border-inline-start: 1px solid var(--color-decor-el, #FF0070);
 }
 
 .decorated-elements::before {
@@ -38,8 +38,8 @@
   right: 10px;
   inline-size: 25px;
   block-size: 25px;
-  border-block-start: 1px solid var(--accent-color, #FF0070);
-  border-inline-end: 1px solid var(--accent-color, #FF0070);
+  border-block-start: 1px solid var(--color-decor-el, #FF0070);
+  border-inline-end: 1px solid var(--color-decor-el, #FF0070);
 }
 
 .rec-element {
@@ -54,8 +54,7 @@
   content: "rec";
   color: var(--accent-color, #FF0070);
   font-family: var(--main-font-family);
-  font-weight: 400px;
-  line-height: 25px;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -72,8 +71,11 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 15px;
-  color: var(--accent-color);
+  color: var(--main-title-color);
+  padding-inline-end: 8px;
 }
 
 
@@ -94,7 +96,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--color-active);
 }
 
 .header__theme-menu-button:hover {
@@ -102,7 +104,8 @@
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--color-active);
+  outline: 1px solid var(--color-active);
+  background-color: transparent;
 }
 
 .header__title {
@@ -137,6 +140,7 @@
 
 .content__article {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 10px;
 }
@@ -173,7 +177,7 @@
 }
 
 .article-link:focus {
-  outline: 1px solid var(--card-text-color);
+  outline: none;
 }
 
 .article-link:focus-visible {
@@ -185,6 +189,7 @@
   font-family: var(--main-font-family);
   font-weight: normal;
   font-size: 18px;
+  color: var(--article-title-text-color);
   background-color: var(--accent-color);
   line-height: 23.4px;
   margin-block-start: 10px;
@@ -202,14 +207,15 @@
 
 .image_item {
   inline-size: 100%;
+  object-fit: cover;
 }
 
 .footer {
+  height: 100vh;
   display: grid;
   position: relative;
   font-family: var(--main-font-family);
-  min-block-size: 668px;
-  margin-block-start: 40px;
+  margin-block-start: 60px;
 }
 
 .footer__title {
@@ -220,19 +226,19 @@
   align-self: center;
   margin-inline-start: 14px;
   margin-inline-end: 13px;
+  text-align: center;
 }
 
 @media (width >= 768px) {
 
   .header {
-    min-block-size: 1024px;
     padding: 20px;
-    position: relative;
   }
 
   .header__title {
     margin-inline-start: -20px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    line-height: 0.825;
   }
 
   .header__theme-menu-list {
@@ -246,27 +252,18 @@
   }
 
   .decorated-elements::after {
-    position: absolute;
     bottom: 20px;
     left: 20px;
   }
 
   .decorated-elements::before {
-    position: absolute;
     top: 20px;
     right: 20px;
   }
 
-  .rec-element::before {
-    position: absolute;
-    right: 28px;
-    top: 10px;
-  }
-
-  .rec-element::after {
-    position: absolute;
-    right: 10px;
-    top: 18px;
+  .rec-element {
+    right: 30px;
+    top: 20px;
   }
 
   .title-text {
@@ -332,10 +329,6 @@
     align-items: stretch;
   }
 
-  .image_item {
-    object-fit: cover;
-  }
-
   .image_sunset {
     grid-area: sunset;
   }
@@ -355,22 +348,9 @@
   .image_street {
     grid-area: street;
   }
-
-  .footer {
-    min-block-size: 1024px;
-    padding-block-start: 45px;
-  }
-
-  .footer__title {
-    text-align: center;
-  }
 }
 
 @media (width >= 1024px) {
-
-  .header {
-    min-block-size: 768px;
-  }
 
   .header__title {
     font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
@@ -384,7 +364,6 @@
 
   .header__theme-menu-list {
     flex-direction: row;
-    gap: 10px;
   }
 
   .content__why {
@@ -392,8 +371,6 @@
   }
 
   .content__what {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   } 
 
@@ -412,10 +389,6 @@
 
   .content__how {
     grid-template-columns: 315px 1fr;
-  }
-
-  .footer {
-    min-block-size: 768px;
   }
 
   .footer__title {

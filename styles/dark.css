@@ -10,7 +10,8 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --bg-image: url(../images/cover-image-dark.png);
-  --main-font-family: IBM Plex Mono;
+  --bg-color: #000028;
+  --main-font-family: IBM Plex Mono, monospace;
   --card-text-color: #F1B2CE;
   --article-title-text-color: #000028;
   --accent-color: #FF0070;
@@ -20,6 +21,7 @@
   --color-hover: #F1B2CE;
   --color-active: #FF0070;
   --main-title-color: #FF0070;
+  --color-decor-el: #FF0070;
 }
 
 .theme-dark .page {

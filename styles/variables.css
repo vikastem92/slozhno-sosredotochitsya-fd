@@ -4,10 +4,16 @@
 */
 :root {
   --bg-image: url(../images/cover-image-dark.png);
-  --main-font-family: IBM Plex Mono;
+  --bg-color: #000028;
+  --main-font-family: IBM Plex Mono, monospace;
   --card-text-color: #F1B2CE;
   --article-title-text-color: #000028;
   --accent-color: #FF0070;
   --focus-color: #DB00FF;
-  --color-hover: rgb(255, 0, 112, 0.4);
+  --focus-header-shadow: #FF0070;
+  --focus-footer-shadow: #FF0070;
+  --color-hover: rgba(255, 0, 112, 0.4);
+  --color-active: #FF0070;
+  --main-title-color: #FF0070;
+  --color-decor-el: #FF0070;
 }
