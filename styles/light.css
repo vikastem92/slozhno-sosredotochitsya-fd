@@ -22,6 +22,7 @@
   --color-active: #353430;
   --main-title-color: #353430;
   --color-decor-el: #353430;
+  --display-rec: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -39,15 +40,8 @@
     --color-active: #353430;
     --main-title-color: #353430;
     --color-decor-el: #353430;
+    --display-rec: none;
   }
-}
-
-.theme-light .rec-element {
-  display: none;
-}
-
-.theme-auto .rec-element {
-  display: none;
 }
 
 .theme-light .page {

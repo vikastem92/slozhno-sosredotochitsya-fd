@@ -18,10 +18,11 @@
   --focus-color: #DB00FF;
   --focus-header-shadow: #FF0070;
   --focus-footer-shadow: #FF0070;
-  --color-hover: #F1B2CE;
+  --color-hover: rgba(255, 0, 112, 0.4);
   --color-active: #FF0070;
   --main-title-color: #FF0070;
   --color-decor-el: #FF0070;
+  --display-rec: flex;
 }
 
 .theme-dark .page {
