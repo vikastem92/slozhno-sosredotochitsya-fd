@@ -77,7 +77,6 @@
   justify-content: center;
   gap: 15px;
   color: var(--main-title-color);
-  padding-inline-end: 8px;
 }
 
 
@@ -91,6 +90,7 @@
   text-transform: lowercase;
   cursor: pointer;
   border: none;
+  padding: 1px 13px 3px 13px;
 }
 
 .header__theme-menu-button:focus {
@@ -243,7 +243,6 @@
 
   .header__theme-menu-list {
     gap: 10px;
-    margin-block-end: 10px;
   }
 
   .header__theme-menu-button {
@@ -271,32 +270,9 @@
   }
 
   .content {
-    padding: 62px 20px;
+    padding: 60px 20px;
     gap: 80px;
   }
-
-  /*.content__section {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 20px;
-  }
-
-  .content__why {
-    grid-column: 2 / -1;
-  }
-
-  .artcile-list {
-    grid-column: 1 / -1;
-    grid-row: 2 span;
-  }
-
-  .content__why {
-    display: grid;
-    grid-template-columns: 236px 1fr;
-    gap: 20px;
-    align-items: start;
-    padding-block-start: 60px;
-  }*/
 
   .content__section {
     display: grid;
@@ -306,17 +282,14 @@
 
   .artcile-list {
     grid-column: 2;
-    grid-row: 1 / -1;
   }
 
   .main__title {
     grid-column: 1;
-    grid-row: 1;
   }
 
   .card-list-what .content__how {
     grid-column: 1 / 2;
-    grid-row: 1 / -1;
   }
 
   .content__what {
@@ -326,33 +299,7 @@
 
   .content__what .artcile-list {
     grid-column: 1 / 3;
-    grid-row: span 2;
   }
-
-  /*.content__why .content__article {
-    grid-column: 2 / -1;
-  }
-
-  .content__what {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .main__title__what {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-
-  .card-list-what {
-    grid-column: 1 / 4;
-  }
-
-  .content__how {
-    display: grid;
-    grid-template-columns: 236px 1fr;
-    gap: 20px;
-    align-items: start;
-  }*/
 
   .content__gallery {
     gap: 20px;
@@ -403,7 +350,7 @@
 @media (width >= 1024px) {
 
   .header__title {
-    font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .header__theme-menu {
@@ -422,12 +369,11 @@
   }
 
   .content__why .artcile-list {
-    grid-column: span 2;
+    grid-column: 2 / 4;
   }
 
   .content__what .main__title {
     grid-column: 1 / 2;
-    grid-row: 1 / 2;
   }
 
   .content__what {
@@ -440,40 +386,9 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .content__how {
-    grid-template-columns: 1fr 2fr;
-    grid-auto-flow: column;
-  }
-
   .content__how .artcile-list {
-    grid-column: 2 / 3;
+    grid-column: 2 / 4;
   }
-
-
-  /*.content__why {
-    grid-template-columns: 315px 1fr;
-  }
-
-  .content__what {
-    gap: 20px;
-  } 
-
-  .content__what .main__title__what {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-
-  .content__what .card-list-what {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    grid-column: 1 / -1;
-    grid-row: 2 span;
-  }
-
-  .content__how {
-    grid-template-columns: 315px 1fr;
-  }*/
 
   .footer__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
